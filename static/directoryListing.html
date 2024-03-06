@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directory Listing</title>
+  <style>
+    body {
+      background-color: black; /* Black background */
+      color: white; /* White text for readability */
+      font-family: Arial, sans-serif;
+      margin: 20px; /* Add some padding around the content */
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      padding-top: 20px;
+    }
+    #file-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    #file-list li {
+      display: flex; /* Use flexbox for better alignment */
+      justify-content: space-between; /* Align items horizontally */
+      align-items: center; /* Align items vertically */
+      padding: 10px;
+      margin-bottom: 5px;
+      transition: background-color 0.3s;
+      cursor: pointer; /* Change cursor to pointer on hover */
+    }
+    #file-list li:hover {
+      background-color: #333; /* Darker background on hover */
+    }
+    #file-list li a {
+      text-decoration: none;
+      color: rgb(10, 94, 239); /* Blue text for links */
+      transition: color 0.3s;
+      width: 100%; /* Make the link fill the entire width of the list item */
+    }
+    #file-list li:hover a {
+      color: lightblue; /* Lighter blue text on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>Directory Listing</h1>
+  <ul id="file-list">

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Cat</title>
+    <style>
+        body {
+            background-color: #f2f2f2; /* светло-серый фон */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Высота равная высоте видимой области окна браузера */
+            flex-direction: column; /* Добавлено для вертикального расположения элементов */
+        }
+        img {
+            max-width: 100%; /* чтобы изображение не выходило за пределы экрана */
+            height: auto; /* сохранение пропорций изображения */
+        }
+    </style>
+</head>
+<body>
+    <img src="cat.jpg" alt="Cat Image">
+    <br>
+    <button onclick="window.history.back();">Back</button>
+</body>
+</html>

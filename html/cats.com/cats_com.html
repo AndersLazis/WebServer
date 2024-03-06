@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Web Server</title>
+    <style>
+        body {
+            background-color: #f2f2f2; /* светло-серый фон */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Высота равная высоте видимой области окна браузера */
+            flex-direction: column; /* Добавлено для вертикального расположения элементов */
+        }
+        h1 {
+            text-align: center;
+            color: #333; /* черный цвет текста */
+        }
+    </style>
+</head>
+<body>
+    <h1>cats.com</h1>
+    <button onclick="window.location.href = 'show_cat.html';">Show Cat</button>
+    <br>
+    <button onclick="window.location.href = '../index.html';">Back to Main</button>
+</body>
+</html>
